@@ -1,0 +1,12 @@
+CC=gcc
+BINARY=main
+SOURCES=main.c
+INCLUDES=.
+LIBRARIES=-lm
+OPTIONS=-Wall -O3
+
+all:
+	$(CC) -o $(BINARY) $(SOURCES) -I$(INCLUDES) $(LIBRARIES)
+
+run:
+	./$(BINARY)
